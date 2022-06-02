@@ -65,13 +65,11 @@ def playComputer(word=1):
     if word == 1:
         word = random.choice(words)
     n = len(word)
-
     array = ['_'] * n
     use_chars_tab = []
     words = firstSelection(words, n)
     flag = False
-    counter = 6
-    dict = {}
+    counter = 10
     while counter > 0 and not flag:
         dict = numberOfLetter(words, use_chars_tab)
         character = max(dict, key=dict.get)
